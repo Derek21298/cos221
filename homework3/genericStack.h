@@ -16,7 +16,7 @@ public:
 	Stack();
 	bool empty() const;
 	T peek() const;
-	void push();
+	void push(T number);
 	T pop();
 	int getSize() const;
 
@@ -38,7 +38,7 @@ bool Stack<T>::empty() const {
 
 template<typename T>
 T Stack<T>::peek() const {
-	return elements.at(elements.size);
+	return elements.at(elements.size() - 1);
 }
 
 template<typename T>
@@ -49,7 +49,7 @@ void Stack<T>::push(T number){
 template<typename T>
 T Stack<T>::pop() {
 	T element = elements.at(elements.size() - 1);
-	elements.pop_back;
+	elements.pop_back();
 	return element;
 }
 
