@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include "myPoint.h"
-#include <vector>
 
 using namespace std;
 
@@ -39,6 +38,4 @@ int main(void){
 	cout << "Distance between these points is: " << point1.distance(point2) << endl;
 
 	return 0;	
-
-
 }
